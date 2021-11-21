@@ -8,21 +8,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js" async defer></script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="welcome-page">
             <!-- <a href="./new_page.html">Link text here</a> new page -->
             <h1 class="title-suprise">Special Suprise
                 <h2 class="instructions">Instructions</h2>
-                <p class="instructions-explanation">Welcome to your Tamagotchi! Treat them with care make sure
+                <p class="instructions-explanation">Welcome to your Tamagotchi!
+                 Treat them with care make sure
                 they get a lot of sleep, food, and play. After taking very good 
                 care of your tamagotchi, you may even be able to witness their
                  great transformation.
                 </p>
-                <button class="butn">Press Here</button>
-                    <p>Choose a Character Name <input type="text"></p>
+                <button id="name-butn" onclick="myName()">Submit</button>
+                <p>Choose a Character Name <input id="petName" placeholder="Name Here" type="text"></p>
             </h1>
         </div>
-
     </body>
 </html>
