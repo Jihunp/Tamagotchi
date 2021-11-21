@@ -1,0 +1,15 @@
+
+/*
+welcome page
+*/
+div.welcome-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title-suprise {
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+
+}
