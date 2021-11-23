@@ -14,19 +14,25 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="welcome-page">
-            <!-- <a href="./new_page.html">Link text here</a> new page -->
-            <h1 class="title-suprise">Special Suprise
+
+        <div class="hidden-page">
+            <h1 class="title-suprise">Special Suprise</h1>
                 <h2 class="instructions">Instructions</h2>
                 <p class="instructions-explanation">Welcome to your Tamagotchi!
-                 Treat them with care make sure
-                they get a lot of sleep, food, and play. After taking very good 
-                care of your tamagotchi, you may even be able to witness their
-                 great transformation.
+                Treat them with care and make sure they get a lot of sleep, food, and play.
+                After taking very good care of your tamagotchi, you may even be able to witness their
+                great transformation.
                 </p>
-                <button id="name-butn" onclick="myName()">Submit</button>
-                <p>Choose a Character Name <input id="petName" placeholder="Name Here" type="text"></p>
-            </h1>
+                <p>Choose a Character Name <input id="pet-name" placeholder="Name Here" type="text">
+                    <button id="name-button" onclick="myName()" >Submit</button></p>
+                    <button id="name-button" onclick="play()" >Raise my Tamagotchi</button></p>
+                    <!-- Change the button onclick feature -->
+                <p><button id="don't-play" onclick="doNotPlay()" >I can't bear the responsibility</button></p>
         </div>
+
+        <div>
+
+        </div>
+
     </body>
 </html>

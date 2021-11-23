@@ -2,14 +2,8 @@
 /*
 welcome page
 */
-div.welcome-page {
+div.hidden-page {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-.title-suprise {
-    justify-self: center;
-    align-content: center;
-    text-align: center;
-
 }
