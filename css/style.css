@@ -7,3 +7,8 @@ div.hidden-page {
     align-items: center;
     text-align: center;
 }
+img {
+    max-width: 600px;
+    max-height: 600px
+}
+
