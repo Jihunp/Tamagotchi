@@ -1,8 +1,12 @@
+/* whole html */
+* {
+    box-sizing: border-box;
+}
 
 /*
 welcome page
 */
-div.hidden-page {
+.welcome-page {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -12,8 +16,19 @@ img {
     max-height: 600px
 }
 
+/* Exp bar */
+#exp-container {
+    width: 100%;
+    background-color: grey;
+}
+#exp-bar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    text-align: center;
+    color: white;
 
-
+}
 
 
 

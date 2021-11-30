@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="hidden-page">
+        <div class="welcome-page">
             <h1 class="title-suprise">Special Suprise</h1>
                 <h2 class="instructions">Instructions</h2>
                 <p class="instructions-explanation">Welcome to your Tamagotchi!
@@ -34,11 +34,12 @@
                 <h1 class="survive-bar">hunger</h1>
                 <h1 class="survive-bar">sleep</h1>
                 <img src="https://tinyurl.com/yckuxmpm" alt="pet rock">
-<!-- "https://soundcloud.com/spongywan/spongebob-production-music-twelfth-street-rag" -->
-            
-            <audio controls autoplay id= "myAudio" src="sponge.mp3" type="audio/mp3"></audio>
+                <audio controls id= "myAudio" src="sponge.mp3" type="audio/mp3"></audio>
             </div>
-            <div>
+            <button onclick="exp()"> click me</button>
+            <div id="exp-container">
+                <div id="exp-bar">1%
+                </div>
             </div>
         </div>
 
