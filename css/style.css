@@ -12,3 +12,22 @@ img {
     max-height: 600px
 }
 
+
+
+
+
+
+/* Evolution 1 grid container example */
+
+.grid-container {
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    background-color: tomato;
+    border: purple;
+    padding: 15px;
+}
