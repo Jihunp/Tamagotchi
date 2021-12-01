@@ -43,18 +43,14 @@ into a different tamagotchi.
 
 <img src ="https://user-images.githubusercontent.com/92244135/144167703-4f20b3b5-65f7-4348-9257-b36179acf3aa.png" width= "500" height= "500">
 
-<img src ="https://user-images.githubusercontent.com/92244135/144167808-b4e80995-bd71-4137-b8a5-fe15e3fcdff2.png" width= "500" height= "500">
+<img src ="https://user-images.githubusercontent.com/92244135/144167808-b4e80995-bd71-4137-b8a5-fe15e3fcdff2.png" width= "800" height= "500">
 
-<img src ="https://user-images.githubusercontent.com/92244135/144167856-6af71684-b072-4314-b0aa-32c46f41a0ca.png" width= "500" height= "500">
+<img src ="https://user-images.githubusercontent.com/92244135/144176530-2300da15-6f1e-42d1-bd35-6dcacae18aaa.png" width= "800" height= "500">
 
-<img src ="https://user-images.githubusercontent.com/92244135/144167882-9e3b5bb5-3b41-4369-9671-ea7c03b5140d.png" width= "500" height= "500">
+<img src ="https://user-images.githubusercontent.com/92244135/144167882-9e3b5bb5-3b41-4369-9671-ea7c03b5140d.png" width= "800" height= "500">
 
-<img src ="https://user-images.githubusercontent.com/92244135/144167907-5816a7f4-73df-4fea-9540-26799b223555.png" width= "500" height= "500">
+<img src ="https://user-images.githubusercontent.com/92244135/144167907-5816a7f4-73df-4fea-9540-26799b223555.png" width= "500" height= "900">
 
-<img src ="https://user-images.githubusercontent.com/92244135/144167659-c5783c70-f8dd-475f-ae2d-0bffd1e9bc3e.png" width= "500" height= "500">
-
-
-If you want to look at the entire wireframe <a src="https://www.figma.com/file/n4lw0wOCaEdHnBX8KOe3Ma/Tamagotchi?node-id=0%3A1">here</a>
 
 ## Technologies Used:
     - HTML
