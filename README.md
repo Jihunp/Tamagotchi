@@ -7,19 +7,18 @@ Explain the concept of the application or game. Include instructions and how to 
 ## Wireframes:
 https://www.figma.com/file/n4lw0wOCaEdHnBX8KOe3Ma/Tamagotchi?node-id=0%3A1
 
-![WelcomePage](2021-11-30-19-20-33.png)
+![image](https://user-images.githubusercontent.com/92244135/144167659-c5783c70-f8dd-475f-ae2d-0bffd1e9bc3e.png)
 
-![Don't want to play](2021-11-30-19-33-39.png)
+![image](https://user-images.githubusercontent.com/92244135/144167703-4f20b3b5-65f7-4348-9257-b36179acf3aa.png)
 
-![evolution 2](2021-11-30-19-23-13.png)
+![image](https://user-images.githubusercontent.com/92244135/144167808-b4e80995-bd71-4137-b8a5-fe15e3fcdff2.png)
 
-![evolution 3](2021-11-30-19-32-33.png)
+![image](https://user-images.githubusercontent.com/92244135/144167856-6af71684-b072-4314-b0aa-32c46f41a0ca.png)
 
-![final form](2021-11-30-19-32-58.png)
+![image](https://user-images.githubusercontent.com/92244135/144167882-9e3b5bb5-3b41-4369-9671-ea7c03b5140d.png)
 
-![win condition](2021-11-30-19-34-17.png)
+![image](https://user-images.githubusercontent.com/92244135/144167907-5816a7f4-73df-4fea-9540-26799b223555.png)
 
-![lose condition](2021-11-30-19-34-42.png)
 
 ## Technologies Used:
     - HTML
