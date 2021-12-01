@@ -28,18 +28,33 @@
                 <button id="play-button" >Raise my Tamagotchi</button>
                 <button id="no-play" >I can't bear the responsibility</button>
         </div>
+
         <div id="evolution1" class="evolution1-container">
             <div id="survive">
+                <h1 id="pet"></h1>
                 <img height="500px" src="https://tinyurl.com/yckuxmpm" alt="pet rock">
             </div>
             <div id="audio">
-                <h1 id="bored" class="survive-bar">Boredom</h1>
-                <h1 id="hungry" class="survive-bar">Hunger</h1>
-                <h1 id="sleepy" class="survive-bar">Sleep</h1>
+                <div class="pet-status" id="bored-pet"> 
+                    <div id="bored"> <h1 class="survive-bar">Boredom</h1></div>
+                </div>
+                <div class="pet-status" id="hungry-pet"> 
+                    <div id="hungry"> <h1 class="survive-bar">Hunger</h1></div> 
+                </div>
+                <div class="pet-status" id="sleepy-pet"> 
+                    <div id="sleepy"> <h1 class="survive-bar">Sleep</h1></div>
+                </div>
+
+                <div id="pet-interaction"> 
+                    <button id="play">Play</button> 
+                    <button class="eat">Eat</button> 
+                    <button class="sleep">Sleep</button>
+                </div>
+
                 <audio controls id= "myAudio" src="sponge.mp3" type="audio/mp3"></audio>
+                <h3>Exp</h3>
                 <div id="exp-container">
-                    <div id="exp-bar">1%
-                    </div>
+                    <div id="exp-bar">1%</div>
                 </div>
             </div>
         </div>

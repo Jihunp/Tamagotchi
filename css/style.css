@@ -3,10 +3,10 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     overflow: hidden;
     height: 100%;
-}
+} */
 
 /*
 welcome page
@@ -26,18 +26,11 @@ img {
 /* Exp bar */
 #evolution1 {
     margin-top: 10%;
-    background-color: tomato;
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.survive-bar {
-    text-align: left;
-    padding-bottom: 10%;
-}
 #audio {
     text-align: center;
-    background-color: blue;
-    padding-top: 5%;
 }
 #exp-container {
     width: 100%;
@@ -50,9 +43,30 @@ img {
     background-color: green;
     text-align: center;
     color: white;
-
+    
 }
 
+/* survive bars */
+.pet-status {
+    width: 100%;
+    background-color: grey;
+    text-align: left ;
+}
+
+#bored {
+    background-color: blueviolet;
+    width: 70%;
+    z-index: 10;
+}
+
+#hungry {
+    background-color: blueviolet;
+    width: 60%;
+}
+#sleepy {
+    background-color: blueviolet;
+    width: 80%;
+}
 
 
 /* Evolution 1 grid container example */
