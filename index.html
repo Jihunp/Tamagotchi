@@ -24,21 +24,22 @@
                 </p>
                 <img src="https://tinyurl.com/ykaty5vr" alt="rock"/>
                 <p>Choose a Character Name <input id="pet-name" placeholder="Name Here" type="text">
-                    <button id="name-button" onclick="myName()" >Submit</button></p>
-                <button id="play-button" onclick="hidePlay()" >Raise my Tamagotchi</button>
-                <button id="don't-play" onclick="doNotPlay()" >I can't bear the responsibility</button>
+                    <button id="name-button" >Submit</button></p>
+                <button id="play-button" >Raise my Tamagotchi</button>
+                <button id="no-play" >I can't bear the responsibility</button>
         </div>
-        <div class="evolution1">
+        <div id="evolution1" class="evolution1-container">
             <div id="survive">
-                <h1 class="survive-bar">boredom</h1>
-                <h1 class="survive-bar">hunger</h1>
-                <h1 class="survive-bar">sleep</h1>
-                <img src="https://tinyurl.com/yckuxmpm" alt="pet rock">
-                <audio controls id= "myAudio" src="sponge.mp3" type="audio/mp3"></audio>
+                <img height="500px" src="https://tinyurl.com/yckuxmpm" alt="pet rock">
             </div>
-            <button onclick="exp()"> click me</button>
-            <div id="exp-container">
-                <div id="exp-bar">1%
+            <div id="audio">
+                <h1 id="bored" class="survive-bar">Boredom</h1>
+                <h1 id="hungry" class="survive-bar">Hunger</h1>
+                <h1 id="sleepy" class="survive-bar">Sleep</h1>
+                <audio controls id= "myAudio" src="sponge.mp3" type="audio/mp3"></audio>
+                <div id="exp-container">
+                    <div id="exp-bar">1%
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,14 +49,14 @@
 <!--Links to pictures I'll use in the future 
     https://tinyurl.com/yckr6pch  https://tinyurl.com/3yjvufab -->
 
-        <div class="grid-container">
+        <!-- <div class="grid-container">
             <div class="grid-item">frame 1 boredom</div>
             <div class="grid-item"> frame 2 sleep</div>
             <div class="grid-item">frame 3 hunger</div>
             <div class="grid-item">picture container</div>
             <div class="grid-item"> video</div>
             <div class="grid-item"> exp bar</div>
-        </div>
+        </div> -->
 
     </body>
 </html>

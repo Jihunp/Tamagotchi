@@ -1,12 +1,25 @@
 # Tamagotchi
 
 ## Concept:
+The concept of the game 
 Explain the concept of the application or game. Include instructions and how to win/lose.
 
 ## Wireframes:
 https://www.figma.com/file/n4lw0wOCaEdHnBX8KOe3Ma/Tamagotchi?node-id=0%3A1
 
+![WelcomePage](2021-11-30-19-20-33.png)
 
+![Don't want to play](2021-11-30-19-33-39.png)
+
+![evolution 2](2021-11-30-19-23-13.png)
+
+![evolution 3](2021-11-30-19-32-33.png)
+
+![final form](2021-11-30-19-32-58.png)
+
+![win condition](2021-11-30-19-34-17.png)
+
+![lose condition](2021-11-30-19-34-42.png)
 
 ## Technologies Used:
     - HTML
