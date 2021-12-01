@@ -1,18 +1,23 @@
 
+//object Shrock
+class Shrock {
+    constructor() {
+        this.isAlive = true;
+        this.evolveOne= "";
+        this.evolveTwo= "";
+    }
+    evolve1() {
+        $("#pet-rock").attr("src", `${this.evolveOne}`)
+    }
+    evolve2() {
+        $("#pet-rock").attr("src", `${this.evolveTwo}`)
+    }
+    
+}
+let ogre = new Shrock();
 
-// play button
-$("#play").on("click",function playPet() {
-    let boredBar = document.getElementById("bored")
-        let increment = 10;
-        let width = boredBar.style.width.replace("%", "");
-        console.log(width)
-        if (width <= 100) {
-            $("#bored").css('width', '+=' + increment +"%");
-        } else {
-            alert("your tamagotchi is playing too much")
-        }
-})
 
+//global variables
 
 // name button
 $("#name-button").on("click", function myName() {
@@ -37,37 +42,66 @@ $("#play-button").on("click", function hidePlay() {
     } else {
         hideWelcome.style.display = "none";
     }
-    // exp bar
-    function exp() {
-        let i = 0;
-        if (i == 0) {
-            i = 1;
-            let ele = document.getElementById("exp-bar");
-            let width = 1;
-            let id = setInterval(frame, 10);
-            function frame() {
-                if (width >= 100) {
-                    clearInterval(id);
-                    i = 0;
-                } else {
-                    width++;
-                    ele.style.width = width +"%";
-                    ele.innerHTML = width + "%";
-                }
+    exp(null);
+//evolutions
+    for (let i = 0; i < 4; i++) {
+        setTimeout(function timer() {
+            if (i === 1) {
+                exp($("#pet-rock").attr("src", `https://tinyurl.com/yckr6pch`))
+            }
+            if (i === 2) {
+                exp($("#pet-rock").attr("src", `https://tinyurl.com/3yjvufab`))
+            }
+            if (i === 3) {
+                alert("you won!")
+            }
+        }, i * 10000)
+    }
+});
+//exp bar
+
+function exp(param) {
+    let i = 0;
+    if (i == 0) {
+        i = 1;
+        let ele = document.getElementById("exp-bar");
+        let width = 1;
+        let id = setInterval(frame, 100);
+        function frame() {
+            if (width >= 100) {
+                param
+                clearInterval(id);
+                i = 0;
+                
+            } else {
+                width++;
+                ele.style.width = width +"%";
+                ele.innerHTML = width + "%";
             }
         }
     }
-    exp();
-
-});
+}
 
 
-
-// don't play button
+// no play button. People who don't want to play my game get punished!
 $("#no-play").on("click", function doNotPlay() {
-    window.location =""
-
-    alert("why? I spent a lot of time on it :-(... pls try it out");
+    window.location ="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 });
 
+// game time 
+
+
+
+// play button
+$("#play").on("click",function playPet() {
+    let boredBar = document.getElementById("bored")
+        let increment = 10;
+        let width = boredBar.style.width.replace("%", "");
+        console.log(width)
+        if (width <= 100) {
+            $("#bored").css('width', '+=' + increment +"%");
+        } else {
+            alert("your tamagotchi is playing too much")
+        }
+})
 
