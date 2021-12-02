@@ -15,18 +15,21 @@
     </head>
     <body>
         <div class="welcome-page">
-            <h1 class="title-suprise">Special Suprise</h1>
-                <h2 class="instructions">Instructions</h2>
-                <p class="instructions-explanation">Welcome to your Tamagotchi!
-                Treat them with care and make sure they get a lot of sleep, food, and play.
-                After taking very good care of your tamagotchi, you may even be able to witness their
-                great transformation.
-                </p>
-                <img src="https://tinyurl.com/yckuxmpm" alt="rock"/>
-                <p>Choose a Character Name <input id="pet-name" placeholder="Name Here" type="text">
-                    <button id="name-button" >Submit</button></p>
-                <button id="play-button" >Raise my Tamagotchi</button>
-                <button id="no-play" >I can't bear the responsibility</button>
+            <div>
+                <h1 class="title-suprise">Special Suprise</h1>
+                    <p class="instructions-explanation"><span>Welcome to your Tamagotchi!</span>
+                    Treat them with care and make sure they get a lot of sleep, food, and play.
+                    After taking very good care of your tamagotchi, you may even be able to witness their
+                    great transformation.
+                    </p>
+            </div>
+                <img id="start-rock" src="https://tinyurl.com/yckuxmpm" alt="rock"/>
+                <div id="user-start">
+                    <p id="character">Choose a Character Name <input id="pet-name" placeholder="Name Here" type="text">
+                        <button id="name-button" >Submit</button></p>
+                    <button id="play-button" >Raise my Tamagotchi</button>
+                    <button id="no-play" >I can't bear the responsibility</button>
+                </div>
         </div>
 
         <div id="evolution1" class="evolution1-container">
@@ -58,17 +61,21 @@
                 </div>
             </div>
         </div>
+
         <div id="win">
-            <h1 id="win-head"> your parents say you can own a real pet now </h1>
-            <img src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg" alt="pet rock">
-            <button onclick="window.location.reload();">Play again?</button>
-            <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">I hate Rocks</button>
+            <h1 id="win-head"> Your parents say you can own a real pet now </h1>
+            <div> <img src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg" alt="pet rock"> </div>
+            <button id="win-button" onclick="window.location.reload();">Play again?</button>
+            <button id="win-no-play" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">I hate Rocks</button>
         </div>
+
         <div id="lose">
-            <h1>Your parents say you should stick to goldfish</h1>
-            <img src="https://assets.change.org/photos/2/mk/yg/UuMKYGcbdIqOQVT-800x450-noPad.jpg?1509587898" alt="dead rock">
-            <button onclick="window.location.reload();">Play again?</button>
-            <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">I hate Rocks</button>
+            <div>
+                <h1 id="lose-head">Your parents say you should stick to goldfish</h1>
+                <button id="lose-button" onclick="window.location.reload();">Play again?</button>
+                <button id="lose-no-play" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">I hate Rocks</button>
+                <img src="https://assets.change.org/photos/2/mk/yg/UuMKYGcbdIqOQVT-800x450-noPad.jpg?1509587898" alt="dead rock">
+            </div>
         </div>
 
     </body>

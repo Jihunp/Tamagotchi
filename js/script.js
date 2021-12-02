@@ -40,13 +40,9 @@ $("#no-play").on("click", function doNotPlay() {
 });
 
 // hides start up page and initializes exp bar (start up button)
-$("#play-button").on("click", function hidePlay() {
-    let hideWelcome = document.querySelector(".welcome-page");
-    if (hideWelcome.style.display == "none") {
-        hideWelcome.style.display = "block";
-    } else {
-        hideWelcome.style.display = "none";
-    }
+$("#play-button").on("click", function gamePlay() {
+    //hide fist screen
+    hideWelcome();
     //start game timer
     gameTimer();
     //start exp
@@ -103,6 +99,15 @@ function exp(image, sound) {
     }
 }
 }
+function hideWelcome() {
+    let hideWelcome = document.querySelector(".welcome-page");
+        if (hideWelcome.style.display == "none") {
+            hideWelcome.style.display = "block";
+        } else {
+            hideWelcome.style.display = "none";
+        }
+}
+
 
 //win condition hide game gui
 function showWin() {
@@ -134,7 +139,6 @@ function gameTimer() {
             falsehood;
             clearInterval(globalTimer);
             alert("you're dead kid")
-            showWin();
             showLose();
             
         }

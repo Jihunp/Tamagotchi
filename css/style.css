@@ -1,7 +1,4 @@
 /* whole html */
-* {
-    box-sizing: border-box;
-}
 
 /* body {
     overflow: hidden;
@@ -15,12 +12,54 @@ welcome page
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: chocolate;
+    border: none;
+    display: flex;
+    flex: display;
 
 }
+.title-suprise {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#user-start {
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+}
+#character {
+    font-size: 30px;
+}
+#pet-name {
+    font-size: 20px;
+}
+#name-button {
+    font-size: 20px;
+}
+.instructions-explanation {
+    font-size: 20px;
+    display: wrap;
+    padding: 16px;
+}
+#start-rock {
+    border-radius: 50%;
+    margin: 16px;
+}
+#play-button {
+    font-size: 20px;
+    margin: 16px;
+}
+#no-play {
+    font-size: 20px;
+}
+
+
 img {
-    max-width: 600px;
-    max-height: 600px
+    max-width: 500px;
+    max-height: 500px
+    align-self: center;
 }
 
 /* Exp bar */
@@ -28,6 +67,7 @@ img {
     margin-top: 10%;
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-bottom: 10%;
 }
 #audio {
     text-align: center;
@@ -46,6 +86,37 @@ img {
     
 }
 
+/* Win */
+#win {
+    margin: 20%;
+}
+#win-head {
+    text-align: center;
+}
+#win-button {
+    font-size: 30px;
+}
+#win-no-play {
+    font-size: 30px;
+}
+
+
+
+/* Lose */
+#lose {
+    margin: 20%;
+    justify-content: center;
+    align-items: center;
+}
+#lose-head {
+    text-align: center;
+}
+#lose-button {
+    font-size: 30px;
+}
+#lose-no-play {
+    font-size: 30px;
+}
 /* survive bars */
 .pet-status {
     width: 100%;
@@ -66,4 +137,25 @@ img {
 #sleepy {
     background-color: blueviolet;
     width: 70%;
+}
+
+/* evolution eat, sleep, play */
+#pet-interaction {
+    margin: 20px;
+    padding: 20px;
+}
+#play {
+    font-size: 40px;
+    margin: 10px;
+}
+#eat {
+    font-size: 40px;
+    margin: 10px;
+}
+#sleep {
+    font-size: 40px;
+    margin: 10px;
+}
+#pet-rock {
+    border-radius: 50%;
 }
