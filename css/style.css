@@ -67,19 +67,3 @@ img {
     background-color: blueviolet;
     width: 70%;
 }
-
-
-/* Evolution 1 grid container example */
-
-/* .grid-container {
-    background-color: blue;
-    color: white;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-}
-.grid-item {
-    background-color: tomato;
-    border: purple;
-    padding: 15px;
-} */

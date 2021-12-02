@@ -19,16 +19,6 @@ let time = 0;
 const increment = 10;
 
 
-// let boredBar = document.getElementById("bored");
-// let boredWidth = boredBar.style.width.replace("%", "");
-
-// let hungerBar = document.getElementById("hungry");
-// let hungerWidth = hungerBar.style.width.replace("%", "");
-
-// let sleepBar = document.getElementById("sleepy");
-// let sleepWidth = sleepBar.style.width.replace("%", "");
-
-
 // name button
 $("#name-button").on("click", function myName() {
     const userName = document.getElementById("pet-name").value;
@@ -43,6 +33,7 @@ $("#name-button").on("click", function myName() {
         document.getElementById("pet").innerHTML = pet
     };
 });
+
 // no play button. People who don't want to play my game get punished!
 $("#no-play").on("click", function doNotPlay() {
     window.location ="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -56,32 +47,35 @@ $("#play-button").on("click", function hidePlay() {
     } else {
         hideWelcome.style.display = "none";
     }
+    //start game timer
     gameTimer();
+    //start exp
     exp(null);
 //evolutions
     for (let i = 0; i < 4; i++) {
         setTimeout(function timer() {
-            if(ogre.alive ===false) {
-                return;
-            } else {
+            if(ogre.alive === true) {
                 if(i === 1) {
                     exp($("#pet-rock").attr("src", `https://tinyurl.com/yckr6pch`),
-                     )
+                     $("#myAudio").attr("src", "rock.mp3"))
                 }
                 if (i === 2) {
                     exp($("#pet-rock").attr("src", `https://tinyurl.com/3yjvufab`), 
-                    )
+                    $("#myAudio").attr("src", "shrek-classic.mp3"))
                 }
                 if (i === 3) {
                     alert("you won!")
+                    showWin()
                 }
+                return;
+            } else if(ogre.alive === false){
+                return;
             }
         } , i * 10000);
-         return;
     };
 });
-//exp bar
 
+//exp bar
 function exp(image, sound) {
     if (ogre.alive === false) {
         return;
@@ -109,16 +103,42 @@ function exp(image, sound) {
     }
 }
 }
-// game time 
+
+//win condition hide game gui
+function showWin() {
+    let hideGame = document.getElementById("evolution1");
+    if (hideGame.style.display == "none") {
+        hideGame.style.display = "block";
+    } else {
+        hideGame.style.display = "none";
+    }
+}
+// lose condition hide win page
+function showLose() {
+    let loser = document.getElementById("win");
+    if (loser.style.display == "none") {
+        loser.style.display = "block";
+    } else {
+        loser.style.display = "none";
+    }
+}
+
+
+// game time and subtracting 
 function gameTimer() {
     const goTime = function goTime() {
         time++;
+        // lose condition
         if(ogre.hunger === 0 || ogre.boredom === 0 || ogre.sleepiness === 0){
             let falsehood = ogre.alive = false
             falsehood;
             clearInterval(globalTimer);
             alert("you're dead kid")
+            showWin();
+            showLose();
+            
         }
+        // every some amount of seconds, ogre loses boredom and hunger
         if(time % 10 === 0 && ogre.boredom >= 1) {
             $("#bored").css('width', '-=' + increment +"%");
             ogre.boredom--;
