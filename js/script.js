@@ -3,6 +3,10 @@ have character limit for name input
 create one function that combines the button clicking events for:
 eat sleep and play
 
+after a certain while it alerts you saying your dead kid. need to figure
+out where and how to debug.
+
+
 */
 
 

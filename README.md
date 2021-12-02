@@ -58,17 +58,11 @@ into a different tamagotchi.
     - FontAwesome
     - JavaScript
 
-## Approach:
--First create wire
-Explain your approach to develop the app/game
-
 
 ## Challenges:
-List any challenges and how you overcame them
-Indicate any outstanding problems
-
-## Additional information:
-Add anything else you would like us to know
+Some outstanding problems that I faced was interacting with css width in percentages.
+I just couldn't seem to put it in as an integer value so my workaround was replacing
+the percentage and working with the number before adding it back in.
 
 ## App Demo
 Link to GitHub project (i.e. - username.github.io)

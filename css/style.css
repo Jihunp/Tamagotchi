@@ -1,9 +1,9 @@
 /* whole html */
 
-/* body {
+body {
     overflow: hidden;
     height: 100%;
-} */
+}
 
 /*
 welcome page
@@ -64,7 +64,8 @@ img {
 
 /* Exp bar */
 #evolution1 {
-    margin-top: 10%;
+    background-color: chocolate;
+    padding: 80px;
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 10%;
@@ -89,6 +90,7 @@ img {
 /* Win */
 #win {
     margin: 20%;
+    
 }
 #win-head {
     text-align: center;
@@ -138,6 +140,16 @@ img {
     background-color: blueviolet;
     width: 70%;
 }
+
+/* evolution */
+#pet {
+    text-align: center;
+}
+#bye-bye {
+    font-size: 40px;
+}
+
+
 
 /* evolution eat, sleep, play */
 #pet-interaction {
